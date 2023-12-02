@@ -3,7 +3,7 @@
 
 #include <unordered_map>
 #include <string>
-#include "GameMode.h"
+#include "Match.h"
 
 class Player {
 	private:
@@ -24,7 +24,7 @@ class Player {
 		uint64_t meleeKills;
 		uint64_t headshotKills;
 		std::unordered_map<std::string, int> medals;
-		std::unordered_map<std::string, GameMode> gameModes;
+		std::unordered_map<int, Match> matches;
 	public:
 };
 
